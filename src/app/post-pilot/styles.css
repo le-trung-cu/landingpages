@@ -1,0 +1,12 @@
+.btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF6D2C;
+  color: white;
+  border: 1px solid black;
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  padding: 6px 16px;
+  border-radius: 12px;
+}
