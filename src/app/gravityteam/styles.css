@@ -1,0 +1,49 @@
+:root {
+  --gradient-bg: linear-gradient(to right bottom, #665DCD 0%, #5FA4E6 45%, #D2AB67 100%);
+}
+.linear-background {
+  background-image: var(--gradient-bg);
+}
+
+.bg-1 {
+  background: radial-gradient(ellipse, rgba(112,47,212,1) 0%, rgba(112,47,212, 0.821) 30%, rgba(255,249,249,0) 70%)
+}
+
+.container {
+  width: 100%;
+  @media (width >= 40rem /* 640px */) {
+    max-width: 40rem /* 640px */;
+  }
+  @media (width >= 48rem /* 768px */) {
+    max-width: 48rem /* 768px */;
+  }
+  @media (width >= 64rem /* 1024px */) {
+    max-width: 64rem /* 1024px */;
+  }
+  @media (width >= 80rem /* 1280px */) {
+    max-width: 80rem /* 1280px */;
+  }
+  @media (width >= 90rem /* 1440px */) {
+    max-width: 90rem /* 1440px */;
+  }
+  
+  @media (width >= 96rem /* 1536px */) {
+    max-width: 96rem /* 1536px */;
+  }
+}
+
+.under-line {
+  position: relative;
+  display: inline-block;
+}
+
+.under-line::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #665DCD, #5FA4E6 45%, #D2AB67);
+  
+}
