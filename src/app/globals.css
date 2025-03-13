@@ -124,3 +124,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .miro__btn {
+    @apply bg-[#4262FF] text-white inline-flex justify-center items-center border rounded-full text-base px-5 py-2
+  }
+  .miro__btn-link {
+    @apply text-[#4262FF] underline;
+  }
+
+  .miro__container {
+    @apply mx-auto max-w-[1140px];
+  }
+
+  .miro__heading {
+    @apply text-5xl text-[#050038] font-bold leading-[1.1] -tracking-[0.02em];
+  }
+
+  .miro__text-primary {
+    @apply text-[rgba(5,0,56,0.6)];
+  }
+
+  .miro__text-secondary {
+    @apply text-[#4262FF];
+  }
+
+  .miro__text-mute {
+    @apply text-[#05003866];
+  }
+}
